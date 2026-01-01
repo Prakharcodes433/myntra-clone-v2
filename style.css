@@ -1,0 +1,195 @@
+:root {
+    --myntra-pink: #ff3f6c;
+    --text-primary: #282c3f;
+    --text-muted: #696e79;
+    --bg-light: #f5f5f6;
+    --border-light: #eaeaec;
+    --footer-bg: #fffafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+  padding: 0 40px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.myntrahome {
+  height: 40px;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-grow: 1;
+  margin: 0 30px;
+}
+
+.nav_bar a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  padding: 28px 0;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav_bar a:hover {
+  border-bottom: 3px solid var(--myntra-pink);
+  color: var(--myntra-pink);
+}
+
+.nav_bar a span {
+  color: var(--myntra-pink);
+  font-weight: 700;
+  font-size: 9px;
+  vertical-align: super;
+}
+
+.search_bar {
+  height: 40px;
+  min-width: 250px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.search_input {
+  color: var(--text-primary);
+  background-color: var(--bg-light);
+  flex-grow: 1;
+  height: 40px;
+  border: none;
+  border-radius: 4px; /* Full radius as icon is gone */
+  padding: 0 15px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* .search_icon rules removed */
+
+.action_bar {
+  display: flex;
+  gap: 20px;
+}
+
+.action_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 5px; /* Added padding for better hit area without icon */
+}
+
+/* .action_btn .material-symbols-outlined rules removed */
+
+.action_name {
+  margin-top: 0; /* Adjusted since no icon is above it */
+}
+
+.banner_container {
+  margin: 20px 0 40px 0;
+}
+
+.banner_image {
+  width: 100%;
+  display: block;
+}
+
+.category_heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6em;
+  color: var(--text-primary);
+  margin: 50px 40px 15px 40px;
+}
+
+.category_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 40px;
+}
+
+.sale_item, .sale_itemm {
+  width: 250px;
+  border-radius: 4px;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sale_item:hover, .sale_itemm:hover {
+ transform: scale(1.01);
+}
+
+.footer_container {
+  width: 100%;
+  background-color: var(--footer-bg);
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 60px;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_column a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.footer_column a:hover {
+    color: var(--myntra-pink);
+}
+
+.footer_column h3 {
+  color: var(--text-primary);
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.copyright {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 15px;
+  font-size: 13px;
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--border-light);
+}
